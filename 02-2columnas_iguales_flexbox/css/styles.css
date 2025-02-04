@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .flexbox-2 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}

@@ -49,3 +49,33 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-areas: "content-area"
+                            "inferior";
+    }
+
+    .grid-main {
+        grid-area: content-area;
+    }
+
+    .grid-aside {
+        grid-area: inferior;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-areas: "content-2 sidebar";
+    }
+    .grid-main {
+        grid-area: content-2;
+    }
+
+    .grid-aside {
+        grid-area: sidebar;
+    }
+}
+
